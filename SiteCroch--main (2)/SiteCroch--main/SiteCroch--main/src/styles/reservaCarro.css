@@ -1,0 +1,120 @@
+/* Estilo geral */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header.header h1 {
+    font-size: 24px;
+    color: #2a9d8f;
+  }
+  
+  header.header p {
+    font-size: 16px;
+  }
+  
+  header.header a {
+    color: #2a9d8f;
+    text-decoration: none;
+  }
+  
+  header.header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container principal */
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Estilo dos cards */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+    overflow: hidden;
+  }
+  
+  .card.destaque {
+    border: solid 2px #2a9d8f; /* Destaque para o primeiro card */
+  }
+  
+  .card .badge {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: -10px; /* Ajusta posição */
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  /* Ajuste das imagens */
+  .card-img {
+    width: 100%; /* Largura total do card */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas apenas no topo */
+  }
+  
+  .price-info {
+    padding: 10px;
+  }
+  
+  /* Estilo do botão */
+  .btn {
+    display: block;
+    margin: 10px auto; /* Centraliza o botão */
+    background-color: #2a9d8f;
+    border: 2px solid lightblue; /* Borda lightblue */
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #21867a;
+    border-color: #87ceeb; /* Cor mais escura de lightblue */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
