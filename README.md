@@ -19,3 +19,7 @@
   - Exibição dos veículos que atendem aos critérios definidos na filtragem.
 - **Verificação de Documentos**:
   - Upload e validação dos documentos obrigatórios para o aluguel.
+- **Pagamento**:
+  - Pagamento via cartão de crédito.
+- **Confirmação do pagameto + Código de retirada**:
+  - Tela de confirmação do pagamento juntamente com o código de retirada do veículo.   
